@@ -1,0 +1,4290 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta name="theme-color" content="#090909">
+
+    <title>Esteban & Daniela</title>
+
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+
+<body>
+
+    <!-- ==================================================
+         PANTALLA DE ACCESO
+         ================================================== -->
+
+    <main class="login-screen" id="login-screen">
+
+        <div class="login-container">
+
+            <p class="anniversary">
+                II ANIVERSARIO
+            </p>
+
+            <h1>
+                Esteban
+                <span>&</span>
+                Daniela
+            </h1>
+
+            <div class="gold-line"></div>
+
+            <p class="intro">
+                Hay historias que comienzan con una fecha.
+                <br>
+                La nuestra también.
+            </p>
+
+            <div class="question-container">
+
+                <p>
+                    ¿Cuándo comenzó todo?
+                </p>
+
+                <input
+                    type="text"
+                    id="anniversary-date"
+                    placeholder="DD / MM / AAAA"
+                    maxlength="10"
+                    inputmode="numeric"
+                    autocomplete="off"
+                >
+
+                <button id="enter-button">
+                    ENTRAR
+                </button>
+
+                <p id="login-message"></p>
+
+            </div>
+
+        </div>
+
+    </main>
+
+
+    <!-- ==================================================
+         HOME
+         ================================================== -->
+
+    <main class="home-screen" id="home-screen">
+
+        <section class="home-hero">
+
+            <p class="home-small-title">
+                NUESTRA HISTORIA
+            </p>
+
+            <h2>
+                Esteban
+                <span>&</span>
+                Daniela
+            </h2>
+
+            <p class="home-date">
+                11 · 10 · 2024 — ∞
+            </p>
+
+            <div class="gold-line"></div>
+
+            <p class="together-text">
+                Llevamos juntos
+            </p>
+
+            <div class="love-counter">
+
+                <span id="counter-days">
+                    0
+                </span>
+
+                <small>
+                    días
+                </small>
+
+            </div>
+
+            <p
+                class="counter-detail"
+                id="counter-detail"
+            >
+                y contando cada segundo...
+            </p>
+
+        </section>
+
+
+        <!-- MENÚ -->
+
+        <section class="home-menu">
+
+            <!-- RECUERDOS -->
+
+            <button
+                class="menu-card"
+                id="memories-button"
+            >
+
+                <span class="menu-icon">
+                    ♡
+                </span>
+
+                <small>
+                    NUESTRA HISTORIA
+                </small>
+
+                <strong>
+                    Recuerdos
+                </strong>
+
+                <p>
+                    Los momentos que nos trajeron
+                    hasta aquí.
+                </p>
+
+            </button>
+
+
+            <!-- ARCADE -->
+
+            <button
+                class="menu-card arcade-card"
+                id="arcade-button"
+            >
+
+                <span class="menu-icon">
+                    ♠
+                </span>
+
+                <small>
+                    NUESTRO ARCADE
+                </small>
+
+                <strong>
+                    Jugar
+                </strong>
+
+                <p>
+                    Cinco juegos.
+                    Cinco secretos.
+                </p>
+
+            </button>
+
+
+            <!-- MENSAJES -->
+
+            <button
+                class="menu-card"
+                id="messages-button"
+            >
+
+                <span class="menu-icon">
+                    ✦
+                </span>
+
+                <small>
+                    PARA TI
+                </small>
+
+                <strong>
+                    Mensajes
+                </strong>
+
+                <p>
+                    Algunas cosas que nunca
+                    me cansaré de decirte.
+                </p>
+
+            </button>
+
+
+            <!-- BÓVEDA -->
+
+            <button
+                class="menu-card locked-card"
+                id="vault-button"
+            >
+
+                <span class="menu-icon">
+                    ◇
+                </span>
+
+                <small>
+                    LA BÓVEDA
+                </small>
+
+                <strong id="vault-progress">
+                    0 / 5
+                </strong>
+
+                <p id="vault-description">
+                    Completa el arcade para
+                    descubrirlo todo.
+                </p>
+
+            </button>
+
+        </section>
+
+
+        <!-- CORAZÓN SECRETO -->
+
+        <button
+            class="secret-heart"
+            id="secret-heart"
+            aria-label="Secreto"
+        >
+            ♥
+        </button>
+
+
+        <p class="footer-date">
+            E + D · 2024 — ∞
+        </p>
+
+    </main>
+
+
+    <!-- ==================================================
+         NUESTRA HISTORIA
+         ================================================== -->
+
+    <main
+        class="memories-screen"
+        id="memories-screen"
+    >
+
+        <!-- NAVEGACIÓN -->
+
+        <nav class="memories-nav">
+
+            <button
+                class="back-button"
+                id="back-from-memories"
+            >
+                ← VOLVER
+            </button>
+
+            <span>
+                E + D
+            </span>
+
+        </nav>
+
+
+        <!-- CABECERA -->
+
+        <header class="memories-header reveal">
+
+            <p class="chapter-label">
+                ESTEBAN + DANIELA
+            </p>
+
+            <h2>
+                Nuestra historia
+            </h2>
+
+            <p class="memories-header-date">
+                11 · 10 · 2024 — ∞
+            </p>
+
+            <div class="gold-line"></div>
+
+            <p class="memories-introduction">
+                Algunas historias se recuerdan
+                por fotografías.
+                <br>
+                Otras simplemente nunca se olvidan.
+            </p>
+
+            <span class="scroll-indicator">
+                ↓
+            </span>
+
+        </header>
+
+
+        <!-- ==================================================
+             CAPÍTULO 1
+             LECAFÉ
+             ================================================== -->
+
+        <section class="memory-chapter first-memory">
+
+            <div class="timeline-dot"></div>
+
+            <div class="memory-content reveal">
+
+                <p class="chapter-number">
+                    CAPÍTULO I
+                </p>
+
+                <span class="memory-symbol">
+                    ☕
+                </span>
+
+                <h3>
+                    Donde comenzó todo
+                </h3>
+
+                <p class="memory-location">
+                    LeCafé
+                </p>
+
+
+                <!-- REPRESENTACIÓN DEL CAFÉ -->
+
+                <div class="cafe-scene">
+
+                    <div class="coffee-cup">
+                        <span>♡</span>
+                    </div>
+
+                    <div class="cafe-line"></div>
+
+                    <div class="pie-piece">
+                        △
+                    </div>
+
+                </div>
+
+
+                <p class="memory-text">
+
+                    Todo comenzó después de
+                    recogerte de la U.
+
+                    <br><br>
+
+                    Un cafecito, un pedazo de pie
+                    y una primera cita que en ese
+                    momento parecía solamente
+                    eso...
+
+                    <br><br>
+
+                    <span>
+                        una primera cita.
+                    </span>
+
+                </p>
+
+
+                <p class="memory-small-text">
+                    Ninguno de los dos sabía todavía
+                    todo lo que vendría después.
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             CAPÍTULO 2
+             PRIMER BESO
+             ================================================== -->
+
+        <section class="memory-chapter kiss-memory">
+
+            <div class="timeline-dot"></div>
+
+            <div class="memory-content reveal">
+
+                <p class="chapter-number">
+                    CAPÍTULO II
+                </p>
+
+                <span class="memory-symbol">
+                    ♡
+                </span>
+
+                <h3>
+                    El beso robado
+                </h3>
+
+                <p class="memory-location">
+                    Después de nuestra segunda cita
+                </p>
+
+
+                <!-- CARRO ABSTRACTO -->
+
+                <div class="car-scene">
+
+                    <div class="night-light light-one"></div>
+                    <div class="night-light light-two"></div>
+                    <div class="night-light light-three"></div>
+
+                    <div class="car-roof"></div>
+
+                    <div class="car-body">
+
+                        <span class="car-window left-window"></span>
+
+                        <span class="car-heart">
+                            ♥
+                        </span>
+
+                        <span class="car-window right-window"></span>
+
+                    </div>
+
+                    <div class="car-wheel wheel-left"></div>
+                    <div class="car-wheel wheel-right"></div>
+
+                </div>
+
+
+                <p class="memory-text">
+
+                    Regresando del gym te fui
+                    a dejar a tu casa.
+
+                    <br><br>
+
+                    Estábamos dentro de mi carro
+                    cuando ocurrió uno de esos
+                    momentos que uno simplemente
+                    no olvida.
+
+                </p>
+
+
+                <!-- PREGUNTA -->
+
+                <div class="kiss-question">
+
+                    <p>
+                        Pero existe un detalle
+                        histórico que debemos aclarar...
+                    </p>
+
+                    <strong>
+                        ¿Quién dio el primer beso?
+                    </strong>
+
+
+                    <div class="kiss-options">
+
+                        <button
+                            class="kiss-option"
+                            id="kiss-esteban"
+                        >
+                            Esteban
+                        </button>
+
+                        <button
+                            class="kiss-option"
+                            id="kiss-daniela"
+                        >
+                            Daniela
+                        </button>
+
+                    </div>
+
+
+                    <div
+                        class="kiss-answer"
+                        id="kiss-answer"
+                    ></div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             CAPÍTULO 3
+             ANTIGUA
+             ================================================== -->
+
+        <section class="memory-chapter antigua-memory">
+
+            <div class="timeline-dot"></div>
+
+            <div class="memory-content reveal">
+
+                <p class="chapter-number">
+                    CAPÍTULO III
+                </p>
+
+                <span class="memory-symbol">
+                    ✦
+                </span>
+
+                <h3>
+                    Nuestras aventuras
+                </h3>
+
+                <p class="memory-location">
+                    Antigua Guatemala
+                </p>
+
+
+                <figure class="main-memory-photo">
+
+                    <img
+                        src="assets/photos/foto-01.jpg"
+                        alt="Esteban y Daniela en Antigua Guatemala"
+                        loading="lazy"
+                    >
+
+                </figure>
+
+
+                <p class="memory-text">
+
+                    Antigua terminó convirtiéndose
+                    en uno de esos lugares que
+                    forman parte de nosotros.
+
+                    <br><br>
+
+                    Ir a comer ramen, caminar,
+                    hablar de cualquier cosa...
+
+                    <br><br>
+
+                    y por supuesto, esos tacos de
+                    panqueque con tocino que de
+                    alguna manera también terminaron
+                    formando parte de la historia.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             CAPÍTULO 4
+             GYM
+             ================================================== -->
+
+        <section class="memory-chapter gym-memory">
+
+            <div class="timeline-dot"></div>
+
+            <div class="memory-content reveal">
+
+                <p class="chapter-number">
+                    CAPÍTULO IV
+                </p>
+
+                <span class="memory-symbol">
+                    ♡
+                </span>
+
+                <h3>
+                    Entre entrenos
+                </h3>
+
+                <p class="memory-location">
+                    Gym
+                </p>
+
+
+                <figure class="main-memory-photo gym-photo">
+
+                    <img
+                        src="assets/photos/foto-02.jpg"
+                        alt="Esteban y Daniela en el gym"
+                        loading="lazy"
+                    >
+
+                </figure>
+
+
+                <p class="memory-text">
+
+                    El gym también terminó siendo
+                    parte de nuestra historia.
+
+                    <br><br>
+
+                    Entre entrenos, cansancio,
+                    bromas y momentos juntos,
+                    incluso algo tan cotidiano
+                    terminó teniendo recuerdos
+                    que ahora son nuestros.
+
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             CAPÍTULO 5
+             LO COTIDIANO
+             ================================================== -->
+
+        <section class="memory-chapter everyday-memory">
+
+            <div class="timeline-dot"></div>
+
+            <div class="memory-content reveal">
+
+                <p class="chapter-number">
+                    CAPÍTULO V
+                </p>
+
+                <span class="memory-symbol">
+                    ♥
+                </span>
+
+                <h3>
+                    Nosotros
+                </h3>
+
+                <p class="memory-location">
+                    En cualquier lugar
+                </p>
+
+
+                <p class="memory-text">
+
+                    Después están esos momentos
+                    que no necesitan una fecha,
+                    un viaje o una ocasión especial.
+
+                    <br><br>
+
+                    Solamente nosotros siendo
+                    nosotros.
+
+                </p>
+
+
+                <!-- COLLAGE -->
+
+                <div class="memory-collage">
+
+                    <figure class="collage-photo photo-a">
+
+                        <img
+                            src="assets/photos/foto-03.jpg"
+                            alt="Recuerdo de Esteban y Daniela"
+                            loading="lazy"
+                        >
+
+                    </figure>
+
+
+                    <figure class="collage-photo photo-b">
+
+                        <img
+                            src="assets/photos/foto-04.jpg"
+                            alt="Recuerdo de Esteban y Daniela"
+                            loading="lazy"
+                        >
+
+                    </figure>
+
+
+                    <figure class="collage-photo photo-c">
+
+                        <img
+                            src="assets/photos/foto-05.jpg"
+                            alt="Recuerdo de Esteban y Daniela"
+                            loading="lazy"
+                        >
+
+                    </figure>
+
+
+                    <figure class="collage-photo photo-d">
+
+                        <img
+                            src="assets/photos/foto-06.jpg"
+                            alt="Recuerdo de Esteban y Daniela"
+                            loading="lazy"
+                        >
+
+                    </figure>
+
+
+                    <figure class="collage-photo photo-e">
+
+                        <img
+                            src="assets/photos/foto-07.jpg"
+                            alt="Recuerdo de Esteban y Daniela"
+                            loading="lazy"
+                        >
+
+                    </figure>
+
+                </div>
+
+
+                <div class="everyday-message">
+
+                    <p>
+                        Las risas por cualquier tontería.
+                    </p>
+
+                    <p>
+                        Los momentos que solamente
+                        nosotros entendemos.
+                    </p>
+
+                    <p>
+                        Los “te amo”.
+                    </p>
+
+                    <p>
+                        Y obviamente...
+                    </p>
+
+                    <strong>
+                        “Yo te amo maaaaaaaás.”
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             FINAL DE RECUERDOS
+             ================================================== -->
+
+        <section class="memories-ending">
+
+            <div class="ending-heart reveal">
+                ♥
+            </div>
+
+            <div class="ending-content reveal">
+
+                <p>
+                    Con el tiempo entendí algo...
+                </p>
+
+                <h3>
+                    Mi lugar favorito
+                    <br>
+                    nunca fue un lugar.
+                </h3>
+
+                <div class="gold-line"></div>
+
+                <strong>
+                    Siempre ha sido donde estás tú.
+                </strong>
+
+            </div>
+
+
+            <div class="story-continues reveal">
+
+                <span>
+                    ESTA HISTORIA
+                </span>
+
+                <h4>
+                    continuará...
+                </h4>
+
+                <p>
+                    11 · 10 · 2024 — ∞
+                </p>
+
+            </div>
+
+
+            <button
+                class="memories-home-button"
+                id="memories-home-button"
+            >
+                VOLVER A NUESTRO LUGAR
+            </button>
+
+        </section>
+
+    </main>
+
+
+    <!-- ==================================================
+         LOVE ARCADE
+         ================================================== -->
+
+    <main
+        class="arcade-screen"
+        id="arcade-screen"
+    >
+
+        <!-- FONDO PIXELADO -->
+
+        <div class="arcade-grid"></div>
+
+        <div class="arcade-stars">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <!-- NAVEGACIÓN -->
+
+        <nav class="arcade-nav">
+
+            <button
+                class="arcade-back-button"
+                id="back-from-arcade"
+            >
+                &lt; VOLVER
+            </button>
+
+            <p>
+                E + D
+            </p>
+
+            <span id="arcade-nav-progress">
+                0 / 5
+            </span>
+
+        </nav>
+
+
+        <!-- ==================================================
+             CABECERA ARCADE
+             ================================================== -->
+
+        <section class="arcade-hero">
+
+            <p class="arcade-system-text">
+                SYSTEM READY_
+            </p>
+
+
+            <!-- CORAZÓN 8 BITS -->
+
+            <div
+                class="pixel-heart-container"
+                aria-label="Corazón pixelado"
+            >
+
+                <div class="pixel-heart">
+
+                    <span class="pixel p1"></span>
+                    <span class="pixel p2"></span>
+                    <span class="pixel p3"></span>
+                    <span class="pixel p4"></span>
+
+                    <span class="pixel p5"></span>
+                    <span class="pixel p6"></span>
+                    <span class="pixel p7"></span>
+                    <span class="pixel p8"></span>
+                    <span class="pixel p9"></span>
+                    <span class="pixel p10"></span>
+
+                    <span class="pixel p11"></span>
+                    <span class="pixel p12"></span>
+                    <span class="pixel p13"></span>
+                    <span class="pixel p14"></span>
+                    <span class="pixel p15"></span>
+                    <span class="pixel p16"></span>
+
+                    <span class="pixel p17"></span>
+                    <span class="pixel p18"></span>
+                    <span class="pixel p19"></span>
+                    <span class="pixel p20"></span>
+
+                    <span class="pixel p21"></span>
+                    <span class="pixel p22"></span>
+
+                </div>
+
+            </div>
+
+
+            <p class="arcade-mini-title">
+                ESTEBAN + DANIELA PRESENTAN
+            </p>
+
+
+            <h2>
+                LOVE
+                <span>ARCADE</span>
+            </h2>
+
+
+            <div class="arcade-divider">
+
+                <span></span>
+
+                <strong>
+                    ♥
+                </strong>
+
+                <span></span>
+
+            </div>
+
+
+            <div class="arcade-players">
+
+                <div class="arcade-player">
+
+                    <small>
+                        PLAYER 1
+                    </small>
+
+                    <strong>
+                        DANIELA
+                    </strong>
+
+                </div>
+
+
+                <div class="arcade-vs">
+                    +
+                </div>
+
+
+                <div class="arcade-player">
+
+                    <small>
+                        PLAYER 2
+                    </small>
+
+                    <strong>
+                        ESTEBAN
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="arcade-lives">
+
+                <span>
+                    VIDAS
+                </span>
+
+                <div class="arcade-life-hearts">
+                    ♥ ♥ ♥ ♥ ♥
+                </div>
+
+                <strong>
+                    ∞
+                </strong>
+
+            </div>
+
+
+            <p class="arcade-introduction">
+                Cinco juegos.
+                <br>
+                Cinco secretos.
+                <br>
+                Una sola misión:
+                <span>llegar juntos hasta el final.</span>
+            </p>
+
+
+            <a
+                href="#arcade-games"
+                class="arcade-start-button"
+            >
+                PRESS START
+            </a>
+
+
+            <p class="arcade-start-hint">
+                ▼ SELECT GAME ▼
+            </p>
+
+        </section>
+
+
+        <!-- ==================================================
+             PROGRESO
+             ================================================== -->
+
+        <section
+            class="arcade-progress-section"
+            id="arcade-games"
+        >
+
+            <div class="arcade-section-title">
+
+                <small>
+                    PLAYER PROGRESS
+                </small>
+
+                <h3>
+                    SECRETOS DESBLOQUEADOS
+                </h3>
+
+            </div>
+
+
+            <div class="arcade-progress-box">
+
+                <strong id="arcade-progress-number">
+                    0 / 5
+                </strong>
+
+
+                <div class="arcade-progress-bar">
+
+                    <div
+                        class="arcade-progress-fill"
+                        id="arcade-progress-fill"
+                    ></div>
+
+                </div>
+
+
+                <div class="arcade-progress-hearts">
+
+                    <span
+                        class="progress-heart"
+                        data-game="1"
+                    >
+                        ♥
+                    </span>
+
+                    <span
+                        class="progress-heart"
+                        data-game="2"
+                    >
+                        ♥
+                    </span>
+
+                    <span
+                        class="progress-heart"
+                        data-game="3"
+                    >
+                        ♥
+                    </span>
+
+                    <span
+                        class="progress-heart"
+                        data-game="4"
+                    >
+                        ♥
+                    </span>
+
+                    <span
+                        class="progress-heart"
+                        data-game="5"
+                    >
+                        ♥
+                    </span>
+
+                </div>
+
+            </div>
+
+        </section>
+
+
+        <!-- ==================================================
+             SELECTOR DE JUEGOS
+             ================================================== -->
+
+        <section class="arcade-game-select">
+
+            <!-- JUEGO 01 -->
+
+            <button
+                class="arcade-game-card available"
+                id="game-1-button"
+                data-game="1"
+            >
+
+                <div class="game-number">
+                    01
+                </div>
+
+
+                <div class="game-pixel-icon invader-icon">
+
+                    <span>■</span>
+                    <span>■</span>
+                    <span>■</span>
+
+                    <span>■</span>
+                    <span>□</span>
+                    <span>■</span>
+
+                    <span>■</span>
+                    <span>■</span>
+                    <span>■</span>
+
+                </div>
+
+
+                <div class="game-card-info">
+
+                    <small>
+                        GAME 01
+                    </small>
+
+                    <strong>
+                        LOVE INVADERS
+                    </strong>
+
+                    <p>
+                        Defiende nuestro amor
+                        de todo lo que intente
+                        interponerse.
+                    </p>
+
+                </div>
+
+
+                <div class="game-status">
+
+                    <span class="status-ready">
+                        READY
+                    </span>
+
+                </div>
+
+            </button>
+
+
+            <!-- JUEGO 02 -->
+
+            <button
+                class="arcade-game-card available"
+                id="game-2-button"
+                data-game="2"
+            >
+
+                <div class="game-number">
+                    02
+                </div>
+
+
+                <div class="game-pixel-symbol">
+                    ●
+                </div>
+
+
+                <div class="game-card-info">
+
+                    <small>
+                        GAME 02
+                    </small>
+
+                    <strong>
+                        LOVE MAZE
+                    </strong>
+
+                    <p>
+                        Encuentra el camino
+                        correcto hasta mi corazón.
+                    </p>
+
+                </div>
+
+
+                <div class="game-status">
+
+                    <span class="status-ready">
+                        READY
+                    </span>
+
+                </div>
+
+            </button>
+
+
+            <!-- JUEGO 03 -->
+
+            <button
+                class="arcade-game-card available"
+                id="game-3-button"
+                data-game="3"
+            >
+
+                <div class="game-number">
+                    03
+                </div>
+
+
+                <div class="game-pixel-symbol">
+                    ▰
+                </div>
+
+
+                <div class="game-card-info">
+
+                    <small>
+                        GAME 03
+                    </small>
+
+                    <strong>
+                        BREAK MY HEART
+                    </strong>
+
+                    <p>
+                        Rompe todos los bloques.
+                        Mi corazón ya es tuyo.
+                    </p>
+
+                </div>
+
+
+                <div class="game-status">
+
+                    <span class="status-ready">
+                        READY
+                    </span>
+
+                </div>
+
+            </button>
+
+
+            <!-- JUEGO 04 -->
+
+            <button
+                class="arcade-game-card available"
+                id="game-4-button"
+                data-game="4"
+            >
+
+                <div class="game-number">
+                    04
+                </div>
+
+
+                <div class="game-pixel-symbol">
+                    ▪▪▪
+                </div>
+
+
+                <div class="game-card-info">
+
+                    <small>
+                        GAME 04
+                    </small>
+
+                    <strong>
+                        LOVE SNAKE
+                    </strong>
+
+                    <p>
+                        Haz crecer nuestra historia
+                        sin dejar escapar ningún corazón.
+                    </p>
+
+                </div>
+
+
+                <div class="game-status">
+
+                    <span class="status-ready">
+                        READY
+                    </span>
+
+                </div>
+
+            </button>
+
+
+            <!-- JUEGO 05 -->
+
+            <button
+                class="arcade-game-card available"
+                id="game-5-button"
+                data-game="5"
+            >
+
+                <div class="game-number">
+                    05
+                </div>
+
+
+                <div class="game-pixel-symbol">
+                    ▲
+                </div>
+
+
+                <div class="game-card-info">
+
+                    <small>
+                        FINAL GAME
+                    </small>
+
+                    <strong>
+                        ROAD TO US
+                    </strong>
+
+                    <p>
+                        Un último viaje.
+                        Tú, yo y el camino
+                        que todavía nos falta recorrer.
+                    </p>
+
+                </div>
+
+
+                <div class="game-status">
+
+                    <span class="status-ready">
+                        READY
+                    </span>
+
+                </div>
+
+            </button>
+
+        </section>
+
+
+        <!-- ==================================================
+             MENSAJE INFERIOR
+             ================================================== -->
+
+        <section class="arcade-bottom-message">
+
+            <div class="mini-pixel-heart">
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+
+            <p>
+                NO GAME OVER
+            </p>
+
+            <strong>
+                Aquí tenemos vidas infinitas.
+            </strong>
+
+            <small>
+                E + D · 2024 — ∞
+            </small>
+
+        </section>
+
+
+        <!-- ==================================================
+             MODAL TEMPORAL DE JUEGOS
+
+             Por ahora sirve para comprobar que cada
+             tarjeta responde correctamente.
+
+             Después cada juego tendrá su propia pantalla.
+             ================================================== -->
+
+        <div
+            class="arcade-game-modal"
+            id="arcade-game-modal"
+        >
+
+            <div class="arcade-modal-content">
+
+                <button
+                    class="arcade-modal-close"
+                    id="arcade-modal-close"
+                    aria-label="Cerrar"
+                >
+                    ×
+                </button>
+
+
+                <p class="arcade-modal-label">
+                    LOADING GAME_
+                </p>
+
+
+                <div class="modal-pixel-heart">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+
+                <h3 id="arcade-modal-title">
+                    LOVE INVADERS
+                </h3>
+
+
+                <p id="arcade-modal-text">
+                    Próximamente...
+                </p>
+
+
+                <button
+                    class="arcade-modal-button"
+                    id="arcade-modal-button"
+                >
+                    OK
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+        <!-- ==================================================
+         GAME 01
+         LOVE INVADERS
+         ================================================== -->
+
+    <main
+        class="love-invaders-screen"
+        id="love-invaders-screen"
+    >
+
+        <!-- FONDO -->
+
+        <div class="invaders-background-grid"></div>
+
+        <div class="invaders-stars">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
+        </div>
+
+
+        <!-- ==================================================
+             NAVEGACIÓN
+             ================================================== -->
+
+        <nav class="invaders-nav">
+
+            <button
+                class="invaders-back-button"
+                id="back-from-love-invaders"
+            >
+                &lt; ARCADE
+            </button>
+
+
+            <div class="invaders-nav-title">
+
+                <small>
+                    GAME 01
+                </small>
+
+                <strong>
+                    LOVE INVADERS
+                </strong>
+
+            </div>
+
+
+            <span class="invaders-nav-heart">
+                ♥
+            </span>
+
+        </nav>
+
+
+        <!-- ==================================================
+             INTRO DEL JUEGO
+             ================================================== -->
+
+        <section
+            class="invaders-intro"
+            id="invaders-intro"
+        >
+
+            <p class="invaders-system-text">
+                GAME 01 LOADED_
+            </p>
+
+
+            <!-- INVADER PIXELADO -->
+
+            <div
+                class="love-invader-logo"
+                aria-hidden="true"
+            >
+
+                <span class="li-pixel li-1"></span>
+                <span class="li-pixel li-2"></span>
+
+                <span class="li-pixel li-3"></span>
+                <span class="li-pixel li-4"></span>
+                <span class="li-pixel li-5"></span>
+                <span class="li-pixel li-6"></span>
+
+                <span class="li-pixel li-7"></span>
+                <span class="li-pixel li-8"></span>
+                <span class="li-pixel li-9"></span>
+                <span class="li-pixel li-10"></span>
+                <span class="li-pixel li-11"></span>
+                <span class="li-pixel li-12"></span>
+
+                <span class="li-pixel li-13"></span>
+                <span class="li-pixel li-14"></span>
+                <span class="li-pixel li-15"></span>
+                <span class="li-pixel li-16"></span>
+
+                <span class="li-pixel li-17"></span>
+                <span class="li-pixel li-18"></span>
+
+            </div>
+
+
+            <p class="invaders-game-number">
+                GAME 01
+            </p>
+
+
+            <h2>
+                LOVE
+                <span>INVADERS</span>
+            </h2>
+
+
+            <div class="invaders-divider">
+
+                <span></span>
+
+                <strong>
+                    ♥
+                </strong>
+
+                <span></span>
+
+            </div>
+
+
+            <p class="invaders-mission-label">
+                YOUR MISSION
+            </p>
+
+
+            <p class="invaders-mission">
+                Defiende nuestro amor de todos
+                los invasores.
+                <br><br>
+                Muévete, dispara y elimina
+                todo lo que intente interponerse
+                entre nosotros.
+            </p>
+
+
+            <div class="invaders-rules">
+
+                <div>
+
+                    <small>
+                        PLAYER
+                    </small>
+
+                    <strong>
+                        DANIELA
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <small>
+                        VIDAS
+                    </small>
+
+                    <strong>
+                        ∞
+                    </strong>
+
+                </div>
+
+
+                <div>
+
+                    <small>
+                        OBJETIVO
+                    </small>
+
+                    <strong>
+                        LOVE
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <button
+                class="invaders-start-button"
+                id="invaders-start-button"
+            >
+                START GAME
+            </button>
+
+
+            <p class="invaders-start-hint">
+                NO GAME OVER · VIDAS INFINITAS
+            </p>
+
+        </section>
+
+
+        <!-- ==================================================
+             ZONA DEL JUEGO
+             ================================================== -->
+
+        <section
+            class="invaders-game-section"
+            id="invaders-game-section"
+        >
+
+            <div class="invaders-game-header">
+
+                <div class="invaders-stat">
+
+                    <small>
+                        SCORE
+                    </small>
+
+                    <strong id="invaders-score">
+                        0000
+                    </strong>
+
+                </div>
+
+
+                <div class="invaders-stat invaders-center-stat">
+
+                    <small>
+                        LOVE POWER
+                    </small>
+
+                    <div class="love-power-bar">
+
+                        <div
+                            class="love-power-fill"
+                            id="love-power-fill"
+                        ></div>
+
+                    </div>
+
+                </div>
+
+
+                <div class="invaders-stat">
+
+                    <small>
+                        LIVES
+                    </small>
+
+                    <strong>
+                        ∞
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- CAMPO DEL JUEGO -->
+
+            <div
+                class="invaders-game-board"
+                id="invaders-game-board"
+            >
+
+                <!-- MENSAJE DE INICIO -->
+
+                <div
+                    class="invaders-ready-message"
+                    id="invaders-ready-message"
+                >
+
+                    <span>
+                        READY?
+                    </span>
+
+                    <strong>
+                        PROTECT OUR LOVE
+                    </strong>
+
+                </div>
+
+
+                <!-- ENEMIGOS -->
+
+                <div
+                    class="invaders-enemies"
+                    id="invaders-enemies"
+                ></div>
+
+
+                <!-- PROYECTILES -->
+
+                <div
+                    class="invaders-projectiles"
+                    id="invaders-projectiles"
+                ></div>
+
+
+                <!-- NAVE DEL JUGADOR -->
+
+                <div
+                    class="love-ship"
+                    id="love-ship"
+                    aria-label="Nave de Daniela"
+                >
+
+                    <span class="ship-pixel ship-1"></span>
+                    <span class="ship-pixel ship-2"></span>
+                    <span class="ship-pixel ship-3"></span>
+                    <span class="ship-pixel ship-4"></span>
+                    <span class="ship-pixel ship-5"></span>
+                    <span class="ship-pixel ship-6"></span>
+                    <span class="ship-pixel ship-7"></span>
+                    <span class="ship-pixel ship-8"></span>
+                    <span class="ship-pixel ship-9"></span>
+
+                    <strong class="ship-heart">
+                        ♥
+                    </strong>
+
+                </div>
+
+            </div>
+
+
+            <!-- ==================================================
+                 CONTROLES
+                 ================================================== -->
+
+            <div class="invaders-controls">
+
+                <div class="invaders-move-controls">
+
+                    <button
+                        class="invaders-control-button"
+                        id="invaders-left"
+                        aria-label="Mover a la izquierda"
+                    >
+                        ◀
+                    </button>
+
+
+                    <button
+                        class="invaders-control-button"
+                        id="invaders-right"
+                        aria-label="Mover a la derecha"
+                    >
+                        ▶
+                    </button>
+
+                </div>
+
+
+                <button
+                    class="invaders-fire-button"
+                    id="invaders-fire"
+                >
+                    <span>
+                        ♥
+                    </span>
+
+                    FIRE
+                </button>
+
+            </div>
+
+
+            <p class="invaders-desktop-controls">
+                PC: ← → PARA MOVER · ESPACIO PARA DISPARAR
+            </p>
+
+        </section>
+
+
+        <!-- ==================================================
+             VICTORIA
+             ================================================== -->
+
+        <section
+            class="invaders-victory"
+            id="invaders-victory"
+        >
+
+            <p class="victory-system-text">
+                MISSION COMPLETE_
+            </p>
+
+
+            <!-- CORAZÓN 8 BIT PEQUEÑO -->
+
+            <div class="invaders-victory-heart">
+
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+                <span></span>
+
+            </div>
+
+
+            <p class="victory-label">
+                SECRET 01 UNLOCKED
+            </p>
+
+
+            <h2>
+                El amor
+                <span>ganó.</span>
+            </h2>
+
+
+            <p class="victory-message">
+                Aunque vinieran mil invasores,
+                todavía elegiría estar de tu lado.
+            </p>
+
+
+            <div class="victory-score-box">
+
+                <small>
+                    FINAL SCORE
+                </small>
+
+                <strong id="invaders-final-score">
+                    0000
+                </strong>
+
+            </div>
+
+
+            <button
+                class="victory-secret-button"
+                id="invaders-secret-button"
+            >
+                VER SECRETO ♥
+            </button>
+
+
+            <button
+                class="victory-arcade-button"
+                id="invaders-return-arcade"
+            >
+                VOLVER AL ARCADE
+            </button>
+
+        </section>
+
+
+        <!-- ==================================================
+             SECRETO 01
+             ================================================== -->
+
+        <div
+            class="invaders-secret-modal"
+            id="invaders-secret-modal"
+        >
+
+            <div class="invaders-secret-content">
+
+                <button
+                    class="invaders-secret-close"
+                    id="invaders-secret-close"
+                    aria-label="Cerrar"
+                >
+                    ×
+                </button>
+
+
+                <p class="secret-unlocked-label">
+                    ♥ SECRET 01 ♥
+                </p>
+
+
+                <div class="secret-character">
+
+                    <div class="secret-character-head">
+
+                        <span class="secret-eye left"></span>
+                        <span class="secret-eye right"></span>
+
+                        <span class="secret-blush left"></span>
+                        <span class="secret-blush right"></span>
+
+                        <span class="secret-mouth"></span>
+
+                    </div>
+
+
+                    <div class="secret-character-heart">
+                        ♥
+                    </div>
+
+                </div>
+
+
+                <h3>
+                    NIVEL SUPERADO
+                </h3>
+
+
+                <p>
+                    Daniela ha defendido exitosamente
+                    nuestro amor.
+                </p>
+
+
+                <strong>
+                    Pero seamos sinceros...
+                    <br>
+                    yo ya sabía que ibas a ganar. ♥
+                </strong>
+
+
+                <button
+                    class="secret-continue-button"
+                    id="invaders-secret-continue"
+                >
+                    CONTINUAR
+                </button>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- ==================================================
+     GAME 02
+     LOVE MAZE
+     ================================================== -->
+
+<main
+    class="love-maze-screen"
+    id="love-maze-screen"
+>
+
+    <!-- ==================================================
+         FONDO
+         ================================================== -->
+
+    <div class="maze-background-grid"></div>
+
+    <div class="maze-stars">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <!-- ==================================================
+         NAVEGACIÓN
+         ================================================== -->
+
+    <nav class="maze-nav">
+
+        <button
+            class="maze-back-button"
+            id="back-from-love-maze"
+        >
+            &lt; ARCADE
+        </button>
+
+
+        <div class="maze-nav-title">
+
+            <small>
+                GAME 02
+            </small>
+
+            <strong>
+                LOVE MAZE
+            </strong>
+
+        </div>
+
+
+        <span class="maze-nav-heart">
+            ♥
+        </span>
+
+    </nav>
+
+
+    <!-- ==================================================
+         ZONA DEL JUEGO
+         ================================================== -->
+
+    <section
+        class="maze-game-section"
+        id="maze-game-section"
+    >
+
+        <!-- ==================================================
+             HUD
+             ================================================== -->
+
+        <div class="maze-game-header">
+
+            <div class="maze-stat">
+
+                <small>
+                    LOVE
+                </small>
+
+                <strong id="maze-score">
+                    0 / 20
+                </strong>
+
+            </div>
+
+
+            <div class="maze-stat maze-center-stat">
+
+                <small>
+                    HEART POWER
+                </small>
+
+                <div class="maze-power-bar">
+
+                    <div
+                        class="maze-power-fill"
+                        id="maze-power-fill"
+                    ></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="maze-stat">
+
+                <small>
+                    LIVES
+                </small>
+
+                <strong>
+                    ∞
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             TABLERO
+             ================================================== -->
+
+        <div
+            class="maze-game-board"
+            id="maze-game-board"
+        >
+
+            <!-- MENSAJE INICIAL -->
+
+            <div
+                class="maze-ready-message"
+                id="maze-ready-message"
+            >
+
+                <span>
+                    READY?
+                </span>
+
+                <strong>
+                    FIND MY HEART
+                </strong>
+
+            </div>
+
+
+            <!--
+                El laberinto será creado
+                automáticamente con JavaScript.
+            -->
+
+            <div
+                class="maze-grid"
+                id="maze-grid"
+            ></div>
+
+
+            <!-- ==================================================
+                 JUGADOR
+                 ================================================== -->
+
+            <div
+                class="maze-player"
+                id="maze-player"
+                aria-label="Daniela"
+            >
+                ♥
+            </div>
+
+
+            <!-- ==================================================
+                 FANTASMAS
+                 ================================================== -->
+
+            <div
+                class="maze-ghost maze-ghost-one"
+                id="maze-ghost-1"
+                aria-hidden="true"
+            >
+                <span class="ghost-eye"></span>
+                <span class="ghost-eye"></span>
+            </div>
+
+
+            <div
+                class="maze-ghost maze-ghost-two"
+                id="maze-ghost-2"
+                aria-hidden="true"
+            >
+                <span class="ghost-eye"></span>
+                <span class="ghost-eye"></span>
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             CONTROLES MÓVILES
+             ================================================== -->
+
+        <div class="maze-controls">
+
+            <button
+                class="maze-control-button maze-up"
+                id="maze-up"
+                aria-label="Mover arriba"
+            >
+                ▲
+            </button>
+
+
+            <button
+                class="maze-control-button maze-left"
+                id="maze-left"
+                aria-label="Mover izquierda"
+            >
+                ◀
+            </button>
+
+
+            <button
+                class="maze-control-button maze-down"
+                id="maze-down"
+                aria-label="Mover abajo"
+            >
+                ▼
+            </button>
+
+
+            <button
+                class="maze-control-button maze-right"
+                id="maze-right"
+                aria-label="Mover derecha"
+            >
+                ▶
+            </button>
+
+        </div>
+
+
+        <p class="maze-mobile-hint">
+            RECOGE TODOS LOS CORAZONES ♥
+        </p>
+
+    </section>
+
+
+    <!-- ==================================================
+         VICTORIA
+         ================================================== -->
+
+    <section
+        class="maze-victory"
+        id="maze-victory"
+    >
+
+        <p class="maze-victory-system">
+            MAZE COMPLETE_
+        </p>
+
+
+        <!-- CORAZÓN -->
+
+        <div class="maze-victory-heart">
+            ♥
+        </div>
+
+
+        <p class="maze-victory-label">
+            SECRET 02 UNLOCKED
+        </p>
+
+
+        <h2>
+            Siempre
+            <span>te encontraría.</span>
+        </h2>
+
+
+        <p class="maze-victory-message">
+
+            No importa cuántas vueltas
+            tenga el camino.
+
+            <br><br>
+
+            Si al final estás tú,
+            siempre voy en la dirección correcta.
+
+        </p>
+
+
+        <div class="maze-final-score">
+
+            <small>
+                HEARTS FOUND
+            </small>
+
+            <strong id="maze-final-score">
+                20 / 20
+            </strong>
+
+        </div>
+
+
+        <button
+            class="maze-secret-button"
+            id="maze-secret-button"
+        >
+            VER SECRETO ♥
+        </button>
+
+
+        <button
+            class="maze-return-button"
+            id="maze-return-arcade"
+        >
+            VOLVER AL ARCADE
+        </button>
+
+    </section>
+
+
+    <!-- ==================================================
+         SECRETO 02
+         ================================================== -->
+
+    <div
+        class="maze-secret-modal"
+        id="maze-secret-modal"
+    >
+
+        <div class="maze-secret-content">
+
+            <button
+                class="maze-secret-close"
+                id="maze-secret-close"
+                aria-label="Cerrar"
+            >
+                ×
+            </button>
+
+
+            <p class="maze-secret-label">
+                ♥ SECRET 02 ♥
+            </p>
+
+
+            <!-- ==================================================
+                 MONITO TIERNO
+                 ================================================== -->
+
+            <div class="maze-cute-character">
+
+                <!-- CABEZA -->
+
+                <div class="maze-cute-head">
+
+                    <span class="maze-cute-ear left"></span>
+
+                    <span class="maze-cute-ear right"></span>
+
+
+                    <span class="maze-cute-eye left"></span>
+
+                    <span class="maze-cute-eye right"></span>
+
+
+                    <span class="maze-cute-blush left"></span>
+
+                    <span class="maze-cute-blush right"></span>
+
+
+                    <span class="maze-cute-mouth"></span>
+
+                </div>
+
+
+                <!-- CUERPO -->
+
+                <div class="maze-cute-body">
+
+                    <span class="maze-cute-arm left"></span>
+
+                    <span class="maze-cute-heart">
+                        ♥
+                    </span>
+
+                    <span class="maze-cute-arm right"></span>
+
+                </div>
+
+            </div>
+
+
+            <h3>
+                ME ENCONTRASTE
+            </h3>
+
+
+            <p>
+                Después de veinte corazones,
+                un laberinto y dos fantasmitas...
+            </p>
+
+
+            <strong>
+                resulta que el premio
+                siempre fui yo. 😂♥
+            </strong>
+
+
+            <button
+                class="maze-secret-continue"
+                id="maze-secret-continue"
+            >
+                CONTINUAR
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+<!-- ==================================================
+     GAME 03
+     BREAK MY HEART
+     ================================================== -->
+
+<main
+    class="break-heart-screen"
+    id="break-heart-screen"
+>
+
+    <!-- ==================================================
+         FONDO
+         ================================================== -->
+
+    <div class="break-heart-background-grid"></div>
+
+    <div class="break-heart-stars">
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+
+    <!-- ==================================================
+         NAVEGACIÓN
+         ================================================== -->
+
+    <nav class="break-heart-nav">
+
+        <button
+            class="break-heart-back"
+            id="back-from-break-heart"
+        >
+            &lt; ARCADE
+        </button>
+
+
+        <div class="break-heart-nav-title">
+
+            <small>
+                GAME 03
+            </small>
+
+            <strong>
+                BREAK MY HEART
+            </strong>
+
+        </div>
+
+
+        <span class="break-heart-nav-icon">
+            ♥
+        </span>
+
+    </nav>
+
+
+    <!-- ==================================================
+         ZONA DE JUEGO
+         ================================================== -->
+
+    <section
+        class="break-heart-game-section"
+        id="break-heart-game-section"
+    >
+
+        <!-- ==================================================
+             HUD
+             ================================================== -->
+
+        <div class="break-heart-hud">
+
+            <div class="break-heart-stat">
+
+                <small>
+                    SCORE
+                </small>
+
+                <strong id="break-heart-score">
+                    0000
+                </strong>
+
+            </div>
+
+
+            <div class="break-heart-stat break-heart-progress-stat">
+
+                <small>
+                    HEART
+                </small>
+
+                <div class="break-heart-progress-bar">
+
+                    <div
+                        class="break-heart-progress-fill"
+                        id="break-heart-progress-fill"
+                    ></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="break-heart-stat">
+
+                <small>
+                    LIVES
+                </small>
+
+                <strong>
+                    ∞
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             TABLERO
+             ================================================== -->
+
+        <div
+            class="break-heart-board"
+            id="break-heart-board"
+        >
+
+            <!-- READY -->
+
+            <div
+                class="break-heart-ready"
+                id="break-heart-ready"
+            >
+
+                <span>
+                    READY?
+                </span>
+
+                <strong>
+                    BREAK MY HEART
+                </strong>
+
+            </div>
+
+
+            <!-- ==================================================
+                 BLOQUES
+
+                 JavaScript construirá aquí
+                 el corazón pixelado.
+                 ================================================== -->
+
+            <div
+                class="break-heart-bricks"
+                id="break-heart-bricks"
+            ></div>
+
+
+            <!-- ==================================================
+                 PELOTA
+                 ================================================== -->
+
+            <div
+                class="break-heart-ball"
+                id="break-heart-ball"
+                aria-hidden="true"
+            >
+                ♥
+            </div>
+
+
+            <!-- ==================================================
+                 PLATAFORMA
+                 ================================================== -->
+
+            <div
+                class="break-heart-paddle"
+                id="break-heart-paddle"
+                aria-label="Plataforma de Daniela"
+            >
+
+                <span></span>
+
+                <strong>
+                    ♥
+                </strong>
+
+                <span></span>
+
+            </div>
+
+
+            <!-- ==================================================
+                 MENSAJE CUANDO CAE LA PELOTA
+                 ================================================== -->
+
+            <div
+                class="break-heart-miss-message"
+                id="break-heart-miss-message"
+            >
+                NICE TRY ♥
+            </div>
+
+        </div>
+
+
+        <!-- ==================================================
+             CONTROLES
+             ================================================== -->
+
+        <div class="break-heart-controls">
+
+            <button
+                class="break-heart-control-button"
+                id="break-heart-left"
+                aria-label="Mover a la izquierda"
+            >
+                ◀
+            </button>
+
+
+            <button
+                class="break-heart-control-button"
+                id="break-heart-right"
+                aria-label="Mover a la derecha"
+            >
+                ▶
+            </button>
+
+        </div>
+
+
+        <p class="break-heart-hint">
+            ROMPE TODO EL CORAZÓN ♥
+        </p>
+
+    </section>
+
+
+    <!-- ==================================================
+         VICTORIA
+         ================================================== -->
+
+    <section
+        class="break-heart-victory"
+        id="break-heart-victory"
+    >
+
+        <p class="break-heart-victory-system">
+            HEART BROKEN_
+        </p>
+
+
+        <!-- CORAZÓN ROTO PIXELADO -->
+
+        <div
+            class="broken-pixel-heart"
+            aria-hidden="true"
+        >
+
+            <div class="broken-heart-left">
+                ♥
+            </div>
+
+            <span class="broken-heart-crack">
+                ⚡
+            </span>
+
+            <div class="broken-heart-right">
+                ♥
+            </div>
+
+        </div>
+
+
+        <p class="break-heart-victory-label">
+            SECRET 03 UNLOCKED
+        </p>
+
+
+        <h2>
+            Rompiste
+            <span>mi corazón.</span>
+        </h2>
+
+
+        <p class="break-heart-victory-message">
+
+            Técnicamente era el objetivo
+            del juego...
+
+            <br><br>
+
+            así que esta vez
+            te lo voy a permitir. 😂♥
+
+        </p>
+
+
+        <div class="break-heart-final-box">
+
+            <small>
+                HEART DESTROYED
+            </small>
+
+            <strong id="break-heart-final-score">
+                100%
+            </strong>
+
+        </div>
+
+
+        <button
+            class="break-heart-secret-button"
+            id="break-heart-secret-button"
+        >
+            VER SECRETO ♥
+        </button>
+
+
+        <button
+            class="break-heart-return-button"
+            id="break-heart-return-arcade"
+        >
+            VOLVER AL ARCADE
+        </button>
+
+    </section>
+
+
+    <!-- ==================================================
+         SECRETO 03
+         ================================================== -->
+
+    <div
+        class="break-heart-secret-modal"
+        id="break-heart-secret-modal"
+    >
+
+        <div class="break-heart-secret-content">
+
+            <button
+                class="break-heart-secret-close"
+                id="break-heart-secret-close"
+                aria-label="Cerrar"
+            >
+                ×
+            </button>
+
+
+            <p class="break-heart-secret-label">
+                ♥ SECRET 03 ♥
+            </p>
+
+
+            <!-- ==================================================
+                 MONITO TIERNO
+                 ================================================== -->
+
+            <div class="break-heart-cute-character">
+
+                <!-- CABEZA -->
+
+                <div class="break-heart-cute-head">
+
+                    <span class="break-cute-ear left"></span>
+
+                    <span class="break-cute-ear right"></span>
+
+
+                    <span class="break-cute-eye left"></span>
+
+                    <span class="break-cute-eye right"></span>
+
+
+                    <span class="break-cute-blush left"></span>
+
+                    <span class="break-cute-blush right"></span>
+
+
+                    <span class="break-cute-mouth"></span>
+
+                </div>
+
+
+                <!-- CUERPO -->
+
+                <div class="break-heart-cute-body">
+
+                    <span class="break-cute-arm left"></span>
+
+                    <span class="break-cute-bandage">
+                        +
+                    </span>
+
+                    <span class="break-cute-arm right"></span>
+
+                </div>
+
+
+                <!-- CORAZÓN REPARADO -->
+
+                <div class="break-cute-repaired-heart">
+                    ♥
+                </div>
+
+            </div>
+
+
+            <h3>
+                DAÑO REPARADO
+            </h3>
+
+
+            <p>
+                Bueno... sí.
+                Lo rompiste bastante.
+            </p>
+
+
+            <strong>
+                Pero por suerte también eres
+                la única que sabe arreglarlo. 😂♥
+            </strong>
+
+
+            <button
+                class="break-heart-secret-continue"
+                id="break-heart-secret-continue"
+            >
+                CONTINUAR
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+<!-- ==================================================
+     GAME 04
+     LOVE SNAKE
+     ================================================== -->
+
+<main
+    class="love-snake-screen"
+    id="love-snake-screen"
+>
+
+    <div class="love-snake-background-grid"></div>
+
+    <div class="love-snake-stars">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+    </div>
+
+
+    <!-- ==============================
+         NAVEGACIÓN
+         ============================== -->
+
+    <nav class="love-snake-nav">
+
+        <button
+            class="love-snake-back"
+            id="back-from-love-snake"
+        >
+            &lt; ARCADE
+        </button>
+
+        <div class="love-snake-nav-title">
+
+            <small>
+                GAME 04
+            </small>
+
+            <strong>
+                LOVE SNAKE
+            </strong>
+
+        </div>
+
+        <span class="love-snake-nav-icon">
+            ♥
+        </span>
+
+    </nav>
+
+
+    <!-- ==============================
+         JUEGO
+         ============================== -->
+
+    <section
+        class="love-snake-game-section"
+        id="love-snake-game-section"
+    >
+
+
+        <!-- HUD -->
+
+        <div class="love-snake-hud">
+
+            <div class="love-snake-stat">
+
+                <small>
+                    HEARTS
+                </small>
+
+                <strong id="love-snake-score">
+                    00 / 20
+                </strong>
+
+            </div>
+
+
+            <div class="love-snake-stat love-snake-progress-stat">
+
+                <small>
+                    LOVE
+                </small>
+
+                <div class="love-snake-progress-bar">
+
+                    <div
+                        class="love-snake-progress-fill"
+                        id="love-snake-progress-fill"
+                    ></div>
+
+                </div>
+
+            </div>
+
+
+            <div class="love-snake-stat">
+
+                <small>
+                    LIVES
+                </small>
+
+                <strong>
+                    ∞
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- TABLERO -->
+
+        <div
+            class="love-snake-board"
+            id="love-snake-board"
+        >
+
+
+            <!-- READY -->
+
+            <div
+                class="love-snake-ready"
+                id="love-snake-ready"
+            >
+
+                <span>
+                    READY?
+                </span>
+
+                <strong>
+                    FIND MY HEART ♥
+                </strong>
+
+            </div>
+
+
+            <!-- GRID -->
+
+            <div
+                class="love-snake-grid"
+                id="love-snake-grid"
+            ></div>
+
+
+            <!-- MENSAJES RÁPIDOS -->
+
+            <div
+                class="love-snake-message"
+                id="love-snake-message"
+            >
+                TE AMO ♥
+            </div>
+
+
+            <!-- BONK -->
+
+            <div
+                class="love-snake-bonk"
+                id="love-snake-bonk"
+            >
+                BONK! ♥
+            </div>
+
+
+            <!-- POWER ACTIVO -->
+
+            <div
+                class="love-snake-active-power"
+                id="love-snake-active-power"
+            ></div>
+
+        </div>
+
+
+        <!-- ==============================
+             CONTROLES
+             ============================== -->
+
+        <div class="love-snake-controls">
+
+            <button
+                class="love-snake-control-button love-snake-up"
+                id="love-snake-up"
+                aria-label="Mover arriba"
+            >
+                ▲
+            </button>
+
+
+            <div class="love-snake-controls-row">
+
+                <button
+                    class="love-snake-control-button"
+                    id="love-snake-left"
+                    aria-label="Mover izquierda"
+                >
+                    ◀
+                </button>
+
+
+                <div class="love-snake-control-heart">
+                    ♥
+                </div>
+
+
+                <button
+                    class="love-snake-control-button"
+                    id="love-snake-right"
+                    aria-label="Mover derecha"
+                >
+                    ▶
+                </button>
+
+            </div>
+
+
+            <button
+                class="love-snake-control-button love-snake-down"
+                id="love-snake-down"
+                aria-label="Mover abajo"
+            >
+                ▼
+            </button>
+
+        </div>
+
+
+        <p class="love-snake-hint">
+            RECOGE 20 CORAZONES ♥
+        </p>
+
+    </section>
+
+
+    <!-- ==================================================
+         VICTORIA
+         ================================================== -->
+
+    <section
+        class="love-snake-victory"
+        id="love-snake-victory"
+    >
+
+        <p class="love-snake-victory-system">
+            LOVE SNAKE COMPLETE_
+        </p>
+
+
+        <div
+            class="love-snake-victory-heart"
+            aria-hidden="true"
+        >
+            ♥
+        </div>
+
+
+        <p class="love-snake-victory-label">
+            SECRET 04 UNLOCKED
+        </p>
+
+
+        <h2>
+            Encontraste
+            <span>todos mis corazones.</span>
+        </h2>
+
+
+        <p class="love-snake-victory-message">
+
+            Aunque técnicamente...
+
+            <br><br>
+
+            todos eran tuyos
+            desde el principio. 😂♥
+
+        </p>
+
+
+        <div class="love-snake-final-box">
+
+            <small>
+                LOVE COLLECTED
+            </small>
+
+            <strong id="love-snake-final-score">
+                20 / 20
+            </strong>
+
+        </div>
+
+
+        <button
+            class="love-snake-secret-button"
+            id="love-snake-secret-button"
+        >
+            VER SECRETO ♥
+        </button>
+
+
+        <button
+            class="love-snake-return-button"
+            id="love-snake-return-arcade"
+        >
+            VOLVER AL ARCADE
+        </button>
+
+    </section>
+
+
+    <!-- ==================================================
+         SECRET 04
+         ================================================== -->
+
+    <div
+        class="love-snake-secret-modal"
+        id="love-snake-secret-modal"
+    >
+
+        <div class="love-snake-secret-content">
+
+
+            <button
+                class="love-snake-secret-close"
+                id="love-snake-secret-close"
+                aria-label="Cerrar"
+            >
+                ×
+            </button>
+
+
+            <p class="love-snake-secret-label">
+                ♥ SECRET 04 ♥
+            </p>
+
+
+            <!--
+                Monito hecho completamente
+                con CSS.
+            -->
+
+            <div class="love-snake-cute-character">
+
+                <div class="cute-snake-body">
+
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+
+                </div>
+
+
+                <div class="cute-snake-head">
+
+                    <span class="cute-snake-eye left"></span>
+
+                    <span class="cute-snake-eye right"></span>
+
+                    <span class="cute-snake-mouth"></span>
+
+                    <span class="cute-snake-blush left"></span>
+
+                    <span class="cute-snake-blush right"></span>
+
+                </div>
+
+
+                <div class="cute-snake-heart">
+                    ♥
+                </div>
+
+            </div>
+
+
+            <h3>
+                SNAKE IN LOVE
+            </h3>
+
+
+            <p>
+                Recogiste todos mis corazones.
+            </p>
+
+
+            <strong>
+                Pero no te emociones...
+                todavía falta demostrar
+                quién ama más. 😂♥
+            </strong>
+
+
+            <button
+                class="love-snake-secret-continue"
+                id="love-snake-secret-continue"
+            >
+                CONTINUAR
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+<!-- ==================================================
+     GAME 05
+     ROAD TO US
+     ================================================== -->
+
+<main
+    class="road-us-screen"
+    id="road-us-screen"
+>
+
+    <div class="road-us-background-grid"></div>
+
+    <div class="road-us-stars">
+        <span></span><span></span><span></span><span></span>
+        <span></span><span></span><span></span><span></span>
+    </div>
+
+
+    <!-- ==============================================
+         NAVEGACIÓN
+         ============================================== -->
+
+    <nav class="road-us-nav">
+
+        <button
+            class="road-us-back"
+            id="back-from-road-us"
+        >
+            &lt; ARCADE
+        </button>
+
+
+        <div class="road-us-nav-title">
+
+            <small>
+                FINAL GAME
+            </small>
+
+            <strong>
+                ROAD TO US
+            </strong>
+
+        </div>
+
+
+        <span class="road-us-nav-icon">
+            ♥
+        </span>
+
+    </nav>
+
+
+    <!-- ==============================================
+         JUEGO
+         ============================================== -->
+
+    <section
+        class="road-us-game-section"
+        id="road-us-game-section"
+    >
+
+
+        <!-- HUD -->
+
+        <div class="road-us-hud">
+
+            <div class="road-us-stat">
+
+                <small>
+                    HEARTS
+                </small>
+
+                <strong id="road-us-hearts">
+                    00
+                </strong>
+
+            </div>
+
+
+            <div class="road-us-stat road-us-progress-stat">
+
+                <small>
+                    DISTANCE
+                </small>
+
+                <div class="road-us-progress-bar">
+
+                    <div
+                        class="road-us-progress-fill"
+                        id="road-us-progress-fill"
+                    ></div>
+
+                </div>
+
+                <strong id="road-us-distance">
+                    0%
+                </strong>
+
+            </div>
+
+
+            <div class="road-us-stat">
+
+                <small>
+                    LIVES
+                </small>
+
+                <strong>
+                    ∞
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==========================================
+             CARRETERA
+             ========================================== -->
+
+        <div
+            class="road-us-board"
+            id="road-us-board"
+        >
+
+
+            <!-- CARRETERA -->
+
+            <div class="road-us-road">
+
+                <div class="road-us-road-edge left"></div>
+
+                <div class="road-us-road-edge right"></div>
+
+
+                <div class="road-us-lane-line line-one"></div>
+
+                <div class="road-us-lane-line line-two"></div>
+
+                <div class="road-us-lane-line line-three"></div>
+
+                <div class="road-us-lane-line line-four"></div>
+
+                <div class="road-us-lane-line line-five"></div>
+
+                <div class="road-us-lane-line line-six"></div>
+
+            </div>
+
+
+            <!-- READY -->
+
+            <div
+                class="road-us-ready"
+                id="road-us-ready"
+            >
+
+                <span>
+                    FINAL LEVEL
+                </span>
+
+                <strong>
+                    ROAD TO US ♥
+                </strong>
+
+                <small>
+                    FIND ESTEBAN
+                </small>
+
+            </div>
+
+
+            <!--
+                CAPA DINÁMICA
+
+                JS pondrá aquí:
+                - obstáculos
+                - corazones
+                - power-ups
+                - carteles
+            -->
+
+            <div
+                class="road-us-objects"
+                id="road-us-objects"
+            ></div>
+
+
+            <!-- ======================================
+                 CARRO DE DANIELA
+                 ====================================== -->
+
+            <div
+                class="road-us-car"
+                id="road-us-car"
+                aria-label="Carro de Daniela"
+            >
+
+                <div class="road-car-light left"></div>
+
+                <div class="road-car-light right"></div>
+
+                <div class="road-car-window"></div>
+
+                <div class="road-car-body">
+
+                    <span class="road-car-wheel left"></span>
+
+                    <span class="road-car-heart">
+                        ♥
+                    </span>
+
+                    <span class="road-car-wheel right"></span>
+
+                </div>
+
+            </div>
+
+
+            <!-- ======================================
+                 MENSAJES
+                 ====================================== -->
+
+            <div
+                class="road-us-message"
+                id="road-us-message"
+            >
+                RUMBO A NOSOTROS ♥
+            </div>
+
+
+            <!-- CHOQUE -->
+
+            <div
+                class="road-us-bonk"
+                id="road-us-bonk"
+            >
+                BONK! 😂
+            </div>
+
+
+            <!-- POWER ACTIVO -->
+
+            <div
+                class="road-us-active-power"
+                id="road-us-active-power"
+            ></div>
+
+
+            <!-- ======================================
+                 META / ESTEBAN
+                 ====================================== -->
+
+            <div
+                class="road-us-finish"
+                id="road-us-finish"
+            >
+
+                <div class="road-finish-line">
+                    FINISH ♥
+                </div>
+
+
+                <div class="road-esteban">
+
+                    <div class="road-esteban-head">
+
+                        <span class="road-esteban-eye left"></span>
+
+                        <span class="road-esteban-eye right"></span>
+
+                        <span class="road-esteban-mouth"></span>
+
+                    </div>
+
+
+                    <div class="road-esteban-body">
+                        ♥
+                    </div>
+
+                </div>
+
+
+                <strong>
+                    ESTEBAN
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <!-- ==========================================
+             CONTROLES
+             ========================================== -->
+
+        <div class="road-us-controls">
+
+            <button
+                class="road-us-control-button"
+                id="road-us-left"
+                aria-label="Mover izquierda"
+            >
+                ◀
+            </button>
+
+
+            <div class="road-us-control-center">
+
+                <span>
+                    ♥
+                </span>
+
+                <small>
+                    DANIELA
+                </small>
+
+            </div>
+
+
+            <button
+                class="road-us-control-button"
+                id="road-us-right"
+                aria-label="Mover derecha"
+            >
+                ▶
+            </button>
+
+        </div>
+
+
+        <p class="road-us-hint">
+            LLEGA HASTA MÍ ♥
+        </p>
+
+    </section>
+
+
+    <!-- ==================================================
+         VICTORIA FINAL
+         ================================================== -->
+
+    <section
+        class="road-us-victory"
+        id="road-us-victory"
+    >
+
+        <p class="road-us-victory-system">
+            FINAL GAME COMPLETE_
+        </p>
+
+
+        <div class="road-us-final-animation">
+
+            <div class="road-final-daniela">
+
+                <span class="road-final-head">
+                    ♥
+                </span>
+
+                <strong>
+                    D
+                </strong>
+
+            </div>
+
+
+            <div class="road-final-heart">
+                ♥
+            </div>
+
+
+            <div class="road-final-esteban">
+
+                <span class="road-final-head">
+                    ♥
+                </span>
+
+                <strong>
+                    E
+                </strong>
+
+            </div>
+
+        </div>
+
+
+        <p class="road-us-victory-label">
+            SECRET 05 UNLOCKED
+        </p>
+
+
+        <h2>
+            Llegaste
+            <span>hasta mí.</span>
+        </h2>
+
+
+        <p class="road-us-victory-message">
+
+            Después de tantos caminos,
+            corazones, choques
+            y uno que otro BONK...
+
+            <br><br>
+
+            igual terminaste
+            exactamente donde quería.
+
+            <br><br>
+
+            <strong>
+                Conmigo. ♥
+            </strong>
+
+        </p>
+
+
+        <div class="road-us-final-box">
+
+            <small>
+                LOVE ARCADE
+            </small>
+
+            <strong>
+                5 / 5 COMPLETE
+            </strong>
+
+        </div>
+
+
+        <button
+            class="road-us-secret-button"
+            id="road-us-secret-button"
+        >
+            VER ÚLTIMO SECRETO ♥
+        </button>
+
+
+        <button
+            class="road-us-return-button"
+            id="road-us-return-arcade"
+        >
+            VOLVER AL ARCADE
+        </button>
+
+    </section>
+
+
+    <!-- ==================================================
+         SECRET 05
+         ================================================== -->
+
+    <div
+        class="road-us-secret-modal"
+        id="road-us-secret-modal"
+    >
+
+        <div class="road-us-secret-content">
+
+
+            <button
+                class="road-us-secret-close"
+                id="road-us-secret-close"
+                aria-label="Cerrar"
+            >
+                ×
+            </button>
+
+
+            <p class="road-us-secret-label">
+                ♥ SECRET 05 ♥
+            </p>
+
+
+            <!-- ======================================
+                 MONITOS CSS
+                 ====================================== -->
+
+            <div class="road-us-cute-couple">
+
+
+                <!-- DANIELA -->
+
+                <div class="road-cute-person daniela">
+
+                    <div class="road-cute-head">
+
+                        <span class="road-cute-eye left"></span>
+
+                        <span class="road-cute-eye right"></span>
+
+                        <span class="road-cute-blush left"></span>
+
+                        <span class="road-cute-blush right"></span>
+
+                        <span class="road-cute-mouth"></span>
+
+                    </div>
+
+
+                    <div class="road-cute-body">
+                        D
+                    </div>
+
+                </div>
+
+
+                <!-- CORAZÓN -->
+
+                <div class="road-cute-love">
+                    ♥
+                </div>
+
+
+                <!-- ESTEBAN -->
+
+                <div class="road-cute-person esteban">
+
+                    <div class="road-cute-head">
+
+                        <span class="road-cute-eye left"></span>
+
+                        <span class="road-cute-eye right"></span>
+
+                        <span class="road-cute-blush left"></span>
+
+                        <span class="road-cute-blush right"></span>
+
+                        <span class="road-cute-mouth"></span>
+
+                    </div>
+
+
+                    <div class="road-cute-body">
+                        E
+                    </div>
+
+                </div>
+
+            </div>
+
+
+            <h3>
+                DESTINATION: US ♥
+            </h3>
+
+
+            <p>
+                Llegaste al final del Arcade.
+            </p>
+
+
+            <strong>
+                Pero tranquila...
+                todavía no llegaste
+                al final de tu regalo.
+            </strong>
+
+
+            <div class="road-secret-warning">
+
+                <small>
+                    NEW AREA AVAILABLE
+                </small>
+
+                <span>
+                    🔓 BÓVEDA
+                </span>
+
+            </div>
+
+
+            <button
+                class="road-us-secret-continue"
+                id="road-us-secret-continue"
+            >
+                CONTINUAR
+            </button>
+
+        </div>
+
+    </div>
+
+</main>
+
+
+
+
+    <!-- ==================================================
+         MENSAJES · 8 PESTAÑAS
+         ================================================== -->
+    <main class="messages-screen" id="messages-screen" hidden>
+
+        <nav class="messages-nav">
+            <button type="button" class="messages-back" id="back-from-messages">← VOLVER</button>
+            <span class="messages-nav-mark">E + D</span>
+        </nav>
+
+        <header class="messages-header">
+            <p class="messages-eyebrow">PARA DANIELA</p>
+            <h2>Cosas que a veces <span>no te digo</span></h2>
+            <p class="messages-subtitle">...o que te digo demasiado. ♥</p>
+            <div class="messages-divider"><span></span><strong>♥</strong><span></span></div>
+            <p class="messages-intro">Dejé ocho cositas por aquí.<br>Ábrelas una por una.</p>
+            <div class="messages-progress">
+                <small>MENSAJES LEÍDOS</small>
+                <strong id="messages-progress-text">0 / 8</strong>
+            </div>
+        </header>
+
+        <section class="messages-tabs" aria-label="Mensajes para Daniela">
+            <button type="button" class="message-tab" data-message="1"><span>♥</span><strong>01</strong><small>CERRADO</small></button>
+            <button type="button" class="message-tab" data-message="2"><span>♥</span><strong>02</strong><small>CERRADO</small></button>
+            <button type="button" class="message-tab" data-message="3"><span>♥</span><strong>03</strong><small>CERRADO</small></button>
+            <button type="button" class="message-tab" data-message="4"><span>♥</span><strong>04</strong><small>CERRADO</small></button>
+            <button type="button" class="message-tab" data-message="5"><span>♥</span><strong>05</strong><small>CERRADO</small></button>
+            <button type="button" class="message-tab" data-message="6"><span>♥</span><strong>06</strong><small>CERRADO</small></button>
+            <button type="button" class="message-tab" data-message="7"><span>♥</span><strong>07</strong><small>CERRADO</small></button>
+            <button type="button" class="message-tab" data-message="8"><span>♥</span><strong>08</strong><small>CERRADO</small></button>
+        </section>
+
+        <!-- Un único visor. Los ocho JPG permanecen ocultos hasta abrir su pestaña. -->
+        <section class="message-viewer" id="message-viewer" hidden>
+            <div class="message-viewer-card">
+                <button type="button" class="message-viewer-close" id="message-viewer-close" aria-label="Cerrar">×</button>
+                <p class="message-viewer-label">MENSAJE <span id="message-viewer-number">01</span></p>
+
+                <article class="message-panel" data-panel="1" hidden>
+                    <div class="message-image-frame sticker-hug">
+                        <img src="assets/photos/monitos-01.jpg" alt="Monitos abrazándose" loading="lazy">
+                        <span class="sticker-effect">♥</span>
+                    </div>
+                    <p>Mi lugar favorito sigue siendo <strong>contigo.</strong></p>
+                </article>
+
+                <article class="message-panel" data-panel="2" hidden>
+                    <div class="message-image-frame sticker-love">
+                        <img src="assets/photos/monitos-02.jpg" alt="Monitos demostrando cariño" loading="lazy">
+                        <span class="sticker-effect">♥</span>
+                    </div>
+                    <p>Por si hoy se me olvidó decirlo: <strong>te amo.</strong></p>
+                </article>
+
+                <article class="message-panel" data-panel="3" hidden>
+                    <div class="message-image-frame sticker-laugh">
+                        <img src="assets/photos/monitos-03.jpg" alt="Monitos riéndose juntos" loading="lazy">
+                        <span class="sticker-effect">JA ♥</span>
+                    </div>
+                    <p>Gracias por reírte conmigo hasta de las cosas <strong>más estúpidas.</strong></p>
+                </article>
+
+                <article class="message-panel" data-panel="4" hidden>
+                    <div class="message-image-frame sticker-coffee">
+                        <img src="assets/photos/monitos-04.jpg" alt="Monitos compartiendo un momento juntos" loading="lazy">
+                    </div>
+                    <p>Quién diría que aquel café iba a terminar <strong>en todo esto.</strong></p>
+                    <small class="message-memory-tag">LECAFÉ · 2024</small>
+                </article>
+
+                <article class="message-panel" data-panel="5" hidden>
+                    <div class="message-image-frame sticker-kiss">
+                        <img src="assets/photos/monitos-05.jpg" alt="Monitos dándose un beso" loading="lazy">
+                        <span class="sticker-effect">♥</span>
+                    </div>
+                    <p>Todavía me acuerdo de cierto <strong>beso robado...</strong></p>
+                    <small class="message-joke">El acusado Esteban no presentó resistencia. 😂</small>
+                </article>
+
+                <article class="message-panel" data-panel="6" hidden>
+                    <div class="message-image-frame sticker-feet">
+                        <img src="assets/photos/monitos-06.jpg" alt="Monitos descansando" loading="lazy">
+                        <span class="sticker-effect">zZ</span>
+                    </div>
+                    <p>Quiero ver <strong>piecitos.</strong></p>
+                    <small class="message-joke">Sí. Tenía que estar aquí. 😂</small>
+                </article>
+
+                <article class="message-panel" data-panel="7" hidden>
+                    <div class="message-image-frame sticker-more-love">
+                        <img src="assets/photos/monitos-07.jpg" alt="Monitos jugando juntos" loading="lazy">
+                    </div>
+                    <div class="message-love-dialogue">
+                        <span>DANIELA: <strong>Te amo.</strong></span>
+                        <span>ESTEBAN: <strong>Yo te amo maaaaaaaaaaaaaás. ♥</strong></span>
+                    </div>
+                </article>
+
+                <article class="message-panel" data-panel="8" hidden>
+                    <div class="message-image-frame sticker-calm">
+                        <img src="assets/photos/monitos-08.jpg" alt="Monitos pasando tiempo juntos" loading="lazy">
+                        <span class="sticker-effect">♥</span>
+                    </div>
+                    <p>Incluso un día normal contigo termina siendo <strong>un recuerdo bonito.</strong></p>
+                </article>
+
+                <button type="button" class="message-viewer-done" id="message-viewer-done">CERRAR ♥</button>
+            </div>
+        </section>
+
+        <section class="messages-complete" id="messages-complete" hidden>
+            <p>♥ 8 / 8 ♥</p>
+            <h3>Espera...</h3>
+            <p>Parece que quedó algo más por aquí.</p>
+            <button type="button" class="open-final-message" id="open-final-message">+ 1 MENSAJE NUEVO</button>
+        </section>
+
+        <section class="final-message-modal" id="final-message-modal" hidden>
+            <div class="final-message-card">
+                <button type="button" class="final-message-close" id="final-message-close" aria-label="Cerrar">×</button>
+                <p class="final-message-label">UN ÚLTIMO MENSAJE</p>
+                <div class="final-message-heart">♥</div>
+                <p>De todos los mensajes de esta página, este es el más importante.</p>
+                <div class="final-message-main">
+                    <span>Gracias por estos dos años.</span>
+                    <strong>Volvería a elegirte.</strong>
+                    <b>♥</b>
+                </div>
+                <small>ESTEBAN + DANIELA<br>11 · 10 · 2024 — ∞</small>
+            </div>
+        </section>
+
+        <footer class="messages-footer">
+            <span>8 pequeños mensajes.</span>
+            <strong>Una sola persona.</strong>
+            <p>Tú. ♥</p>
+            <button type="button" class="messages-home-button" id="messages-home-button">VOLVER A NUESTRO LUGAR</button>
+        </footer>
+
+    </main>
+    <!-- ==================================================
+     BÓVEDA
+     ESTEBAN + DANIELA
+     ================================================== -->
+
+<main class="vault-screen" id="vault-screen" hidden>
+
+    <!-- ==============================================
+         WALLPAPER DE CORAZONES
+
+         Son elementos decorativos.
+         Después CSS les dará movimiento,
+         profundidad y baja opacidad.
+         ============================================== -->
+
+    <div class="vault-hearts" aria-hidden="true">
+
+        <span class="vault-heart heart-01">♥</span>
+        <span class="vault-heart heart-02">♡</span>
+        <span class="vault-heart heart-03">♥</span>
+        <span class="vault-heart heart-04">♡</span>
+        <span class="vault-heart heart-05">♥</span>
+        <span class="vault-heart heart-06">♡</span>
+        <span class="vault-heart heart-07">♥</span>
+        <span class="vault-heart heart-08">♡</span>
+        <span class="vault-heart heart-09">♥</span>
+        <span class="vault-heart heart-10">♡</span>
+        <span class="vault-heart heart-11">♥</span>
+        <span class="vault-heart heart-12">♡</span>
+        <span class="vault-heart heart-13">♥</span>
+        <span class="vault-heart heart-14">♡</span>
+        <span class="vault-heart heart-15">♥</span>
+
+    </div>
+
+
+    <!-- ==============================================
+         NAVEGACIÓN
+         ============================================== -->
+
+    <nav class="vault-nav">
+
+        <button
+            type="button"
+            class="vault-back-button"
+            id="back-from-vault"
+        >
+            ← VOLVER
+        </button>
+
+        <span class="vault-nav-mark">
+            E + D
+        </span>
+
+    </nav>
+
+
+    <!-- ==============================================
+         CABECERA
+         ============================================== -->
+
+    <header class="vault-header">
+
+        <p class="vault-eyebrow">
+            5 / 5 · DESBLOQUEADA
+        </p>
+
+        <h2>
+            LA BÓVEDA
+        </h2>
+
+        <p class="vault-subtitle">
+            Un espacio solo nuestro.
+        </p>
+
+        <div class="vault-title-divider">
+
+            <span></span>
+
+            <strong>
+                ♥
+            </strong>
+
+            <span></span>
+
+        </div>
+
+    </header>
+
+
+    <!-- ==============================================
+         CONTENIDO PRINCIPAL
+         ============================================== -->
+
+    <section class="vault-content">
+
+
+        <!-- ==========================================
+             IMAGEN FINAL
+             ========================================== -->
+
+        <article class="vault-photo-side">
+
+            <div class="vault-photo-frame">
+
+                <div class="vault-photo-glow"></div>
+
+                <img
+                    src="assets/photos/final.jpg"
+                    alt="Esteban y Daniela"
+                    class="vault-final-photo"
+                    loading="lazy"
+                    draggable="false"
+                >
+
+            </div>
+
+
+            <div class="vault-photo-divider">
+
+                <span></span>
+
+                <strong>
+                    ♥
+                </strong>
+
+                <span></span>
+
+            </div>
+
+
+            <p class="vault-photo-date">
+                11 · 10 · 2024 — ∞
+            </p>
+
+        </article>
+
+
+        <!-- ==========================================
+             CARTA
+             ========================================== -->
+
+        <article class="vault-letter-side">
+
+            <div class="vault-letter">
+
+                <div class="vault-letter-top">
+
+                    <span>
+                        PARA DANIELA
+                    </span>
+
+                    <strong>
+                        ♥
+                    </strong>
+
+                </div>
+
+
+                <h3>
+                    Dos años contigo.
+                </h3>
+
+
+                <p class="vault-letter-intro">
+                    Hay cosas que caben en recuerdos,
+                    juegos y pequeños mensajes...
+                    y hay otras que prefiero escribirte.
+                </p>
+
+
+                <div class="vault-letter-divider">
+                    <span></span>
+                </div>
+
+
+                <!-- ==================================
+                     AQUÍ ESCRIBIRÁS TU CARTA
+
+                     Puedes borrar este texto después
+                     y colocar tu carta completa.
+                     ================================== -->
+
+                <div class="vault-letter-text">
+
+                    <p>
+                        Daniela Mi amor ❤️,
+                    </p>
+
+
+                    <p>
+                        FELIZ ANIVERSARIO MI BB 💕
+                    </p>
+
+
+                    <p>
+                        Aun no puedo creer que realmente este pasando… estos dos últimos años contigo han sido los mejores años de mi vida, tan solo el verte, el tocarte, el besarte y amarte parecen un sueño y abecés no creo que realmente sea mi realidad, tú eres mi realidad, mi mundo y mi todo. Estoy mas que listo para una vida entera junto a ti. .
+                    </p>
+
+
+                    <p>
+                       Ante todo problema y dificultad sé que estarás conmigo, sé que no será fácil pero tanbien sé que juntos lucharemos por nosotros y por todo lo nuestro, dos años juntos bb y vamos no solo a por el tercero sino para un millón.
+                    </p>
+
+
+                    <p>
+                        TE AMO CON TODO MI CORAZON. ❤️💕
+                    </p>
+
+                </div>
+
+
+                <div class="vault-signature">
+
+                    <span>
+                        Siempre tuyo,
+                    </span>
+
+                    <strong>
+                        Esteban
+                    </strong>
+
+                    <b>
+                        ♥
+                    </b>
+
+                </div>
+
+            </div>
+
+        </article>
+
+    </section>
+
+
+    <!-- ==============================================
+         CIERRE
+         ============================================== -->
+
+    <section class="vault-ending">
+
+        <span>
+            ESTEBAN + DANIELA
+        </span>
+
+        <h3>
+            Feliz segundo aniversario.
+        </h3>
+
+        <p>
+            Y que esto apenas sea el comienzo. ♥
+        </p>
+
+        <div class="vault-ending-date">
+            11 · 10 · 2024 — ∞
+        </div>
+
+    </section>
+
+
+    <!-- ==============================================
+         VOLVER AL HOME
+         ============================================== -->
+
+    <footer class="vault-footer">
+
+        <button
+            type="button"
+            class="vault-home-button"
+            id="vault-home-button"
+        >
+            VOLVER A NUESTRO LUGAR
+        </button>
+
+    </footer>
+
+</main>
+
+    <!-- ==================================================
+         JAVASCRIPT
+         ================================================== -->
+
+    <script src="js/app.js"></script>
+    <script src="js/games.js"></script>
+
+</body>
+
+</html>
